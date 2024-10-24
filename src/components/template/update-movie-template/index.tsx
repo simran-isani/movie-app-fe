@@ -196,7 +196,6 @@ export const UpdateMovieTemplate = () => {
                 ref={fileInputRef}
                 type="file"
                 name="file"
-                accept="video/*"
                 hidden
                 onChange={handleFileChange}
               />

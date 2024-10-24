@@ -7,6 +7,10 @@ export const ADMIN_ROUTES = {
     pathName: "update movie",
     absolutePath: "/update-movie",
   },
+  MOVIELIST: {
+    pathName: "movie list",
+    absolutePath: "/movies",
+  },
 };
 
 export const USER_ROUTES = {

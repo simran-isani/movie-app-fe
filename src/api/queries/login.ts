@@ -46,7 +46,7 @@ export const useGetLoginUser = () => {
           | ((userInfoProps & JwtPayload & (string | JwtPayload)) | any)
           | null = decodeToken(data.data.token);
         if (userInfo?.role?.includes(SYSTEM_ROLES.ADMIN)) {
-          router.push(ADMIN_ROUTES.CREATEMOVIE.absolutePath);
+          router.push(ADMIN_ROUTES.MOVIELIST.absolutePath);
         } else if (userInfo?.role?.includes(SYSTEM_ROLES.USER)) {
           router.push(USER_ROUTES.MOVIELIST.absolutePath);
         } else {
